@@ -1,0 +1,22 @@
+<body>
+
+  <div class="container">
+    <div class="blocks">
+      {{#each getBlockArray}}
+      {{> blockTemplate}}
+      {{/each}}
+    </div>
+  </div>
+</body>
+
+<template name="blockTemplate">
+  {{#if shouldLineBreak pos}}
+  <br/>
+  {{/if}}
+  <div class="myBlock ">
+    <!--{{state}}-->
+    <div class="myBlockInner {{stateString state}}">
+      <div>{{pos}}</div>
+    </div>
+  </div>
+</template>

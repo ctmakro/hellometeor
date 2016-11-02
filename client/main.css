@@ -1,0 +1,47 @@
+/* CSS declarations go here */
+
+.myBlock{
+  display: inline-block;
+
+  width:48px;
+  height:48px;
+
+  max-width: 15vw;
+  max-height: 15vw;
+
+  padding:4px;
+}
+
+.myBlockInner{
+  background-color: pink;
+  height: 100%;
+  width:100%;
+
+  padding: 0px;
+  font-size: 10px;
+
+  border-radius: 50%;
+}
+
+.myBlockInner div{
+  color:white;
+  vertical-align: middle;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+.myBlockInner.active{
+  background-color: lightblue;
+}
+
+
+.container{
+  text-align: center;
+}
+
+.blocks{
+  display: inline-block;
+  font-size: 0;
+}
